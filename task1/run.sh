@@ -21,6 +21,6 @@ done
 
 mkdir $backup_folder
 find $input_folder -name "*.$extencion" | xargs cp --parents -t $backup_folder
-tar -cf $backup_archive_name $backup_folder 
+tar -czf $backup_archive_name $backup_folder 
 
 echo "done"
